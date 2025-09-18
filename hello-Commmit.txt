@@ -1,1 +1,1 @@
-Sample Git Commits
+Sample Git Commit

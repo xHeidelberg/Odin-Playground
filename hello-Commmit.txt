@@ -1,1 +1,1 @@
-Hello Commits
+Sample Git Commits

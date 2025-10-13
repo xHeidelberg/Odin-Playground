@@ -1,12 +1,12 @@
-const select = document.querySelector('#weather');
+const selectWeather = document.querySelector('#weather');
 const out = document.querySelector('#output');
 
 
-select.addEventListener("change", setWeather);
+selectWeather.addEventListener("change", setWeather);
 
 function setWeather()
 {
-    const choice = select.value;
+    const choice = selectWeather.value;
     switch(choice)
     {
         case "sunny":

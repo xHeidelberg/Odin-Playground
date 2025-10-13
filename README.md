@@ -2,9 +2,9 @@
 The Odin Project Course - Not school related this repository is just my side quest.
 
 
-## HELLO SAMPLE?
-
-Git Commit 10-11-2025
-
-
-## NEW COMMIT
+## See the Commit history Progress playground
+### This repository is messy
+October 11, 2025 - initial commit
+October 12, 2025 - Readme.md edit
+<del>October 13, 2025 - No changes</del>
+October 14, 2025 - Simple Manual Calculator

@@ -11,8 +11,25 @@ function onClick()
     // true
     if(inOne.value === "" || inTwo.value === "")
     {
-        result.textContent = 'Can\'t be Empty';
-        return;
+        if (inOne.value === "" && inTwo.value != null)
+        {
+            result.textContent = "Input One is Empty.";
+            return;
+        }
+        else if (inTwo.value === "" && inOne.value != null)
+        {
+            result.textContent = "Input Two is Empty.";
+            return;
+        }
+        else if (inOne.value)
+        {
+
+        }
+        else
+        {
+            result.textContent = 'Can\'t be Empty';
+            return;
+        }
     }
     calculateNow();
 }

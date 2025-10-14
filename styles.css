@@ -1,3 +1,8 @@
+html
+{
+    align-items: center;
+    text-align: center;
+}
 .manual {
     margin: 3em;
 }
@@ -9,9 +14,12 @@
 
 #calcu
 {
-    margin-left: 8em;
     padding: 12px 5em;
     align-items: center;
     cursor: pointer;
     margin-bottom: 2em;
+}
+h6 
+{
+    text-align: center;
 }

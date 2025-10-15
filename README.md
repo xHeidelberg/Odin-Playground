@@ -7,7 +7,7 @@ October 11, 2025 - initial commit, Add eventlistener JS <br>
 October 12, 2025 - Readme.md edit<br>
 <del>October 13, 2025 - No changes</del><br>
 October 14, 2025 - Simple Manual Calculator <br>
-October 15, 2025 - Alert, Announcement, Click Counter, Function basic<br>
+October 15, 2025 - Alert, Methods, Click Counter, Function basic<br>
 October 16, 2025 - <br>
 October 17, 2025 - <br>
 October 18, 2025 - <br>

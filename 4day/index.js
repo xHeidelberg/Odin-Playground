@@ -102,3 +102,59 @@ function fourClick()
     }
     return;
 }
+
+// Sample 5
+let sample5Button = document.getElementById('sample5Btn');
+sample5Button.addEventListener('click', sample5Click);
+
+function sample5Click()
+{
+    let inputFive = document.getElementById('sample5Input').value;
+    let resultFive = document.getElementById('sample5Result');
+
+    if (inputFive === "")
+    {
+        resultFive.textContent = "Input is Empty.";
+        return;
+    }
+    resultFive.textContent = `Hello, ${inputFive}!`;
+    return;
+}
+
+
+// Function check 
+
+function isAnimal(whatAnimal)
+{
+    if (whatAnimal === "" || whatAnimal === null)
+        return "Input is empty.";
+    return whatAnimal + " is an animal.";
+}
+
+let msg = isAnimal("Dog");
+console.log(msg);
+
+// sample add sumber
+
+function addMe(a, b)
+{
+    return a + b;
+}
+
+let sum = addMe(5, 10);
+console.log(sum);
+
+// stack sample function
+
+function firstStack(a, b){
+    return a + b;
+};
+
+function secondStack(a, b){
+    return firstStack(a, b) * 5;
+};
+
+let ze= secondStack(2, 2);
+console.log(ze);
+// 20
+

@@ -32,6 +32,11 @@ function lastLetter(getLast) {
 console.log(lastLetter("------------------>o"));
 console.log(lastLetter("===================================================>?>!@#>>>>>G"));
 
+
+
+
+
+
 // Sample 6
 /*
     write a program that takes a user’s input and prints the numbers from one to the number the user entered.

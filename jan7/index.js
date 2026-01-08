@@ -135,4 +135,77 @@ colorsNow.forEach((inside, indexing) => {
 
 console.log(colorsNow.reverse());
 
+
 //Array Magic
+let checkEven = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+
+function sumOfTripledEvens(checkEven){
+    let sum = 0;
+    
+    for (let i = 0; i < checkEven.length; i++){
+
+        if (checkEven[i] % 2 === 0){ // divisible by 2 (2, 4, 6, 8, 10)
+            const final = checkEven[i] * 3; // every index times to 3
+            // console.log(checkEven[i] * 3);
+            sum += final; // add assign
+        }
+
+    }
+    return sum; // return 90
+}
+
+console.log(sumOfTripledEvens(checkEven));
+
+// Array | map() method
+
+function plusOne(num){
+    return num + 1;
+}
+
+const arr = [1, 2, 3, 4, 5];
+const mappingArr = arr.map(plusOne);
+console.log(`Original Array: ${arr}`)
+console.log(`map() method: ${mappingArr}`);
+console.log(`increment without changing the array value: ${arr}`)
+
+//shorter version
+
+const shorterMapped = arr.map(num => num + 1);
+console.log(`Short version: ${shorterMapped}`);
+
+// Array | filter() method
+
+function isFilterNow(numCheck){
+    return numCheck % 2 !== 0;
+}
+
+const oddFilter = arr.filter(isFilterNow);
+console.log(oddFilter);
+console.log(arr)
+
+// short version
+const shortFilter = arr.filter(numCheck => numCheck % 2 !== 0);
+console.log(`Shortened Version of Filter: ${shortFilter}`);
+
+
+// Array | reduce() method
+
+const reduceArr = [1, 2, 3, 4, 5];
+const prodOfAllIndex = reduceArr.reduce((reduceTotal, currentIndex) => 
+    {return reduceTotal * currentIndex}, 1);
+
+console.log(prodOfAllIndex);
+console.log(reduceArr);
+
+console.clear();
+// Knowledge Check!! for filter, map and reduce
+
+function sumAll(arraying){
+    return arraying
+    .filter((num) => num % 2 === 0)
+    .map((num) => num * 3)
+    .reduce((acc, curr) => acc + curr);
+}
+
+// Will Continue on Test-driven development (TDD)

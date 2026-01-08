@@ -87,5 +87,5 @@ for(let i = 1; i <= playRound; i++){
         const b = getComputerChoice();
         playGround(a, b);
     }
-    resultIn.innerHTML = `Scores: Player: ${humanScore} | Computer: ${computerScore} | Draw: ${drawScore}`;
+    resultIn.innerHTML = `Scores: Player: ${humanScore} | Computer: ${computerScore} | Draw: ${drawScore}`;gi
 }

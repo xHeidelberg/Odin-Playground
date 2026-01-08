@@ -134,3 +134,5 @@ colorsNow.forEach((inside, indexing) => {
 });
 
 console.log(colorsNow.reverse());
+
+//Array Magic

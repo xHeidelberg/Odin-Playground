@@ -208,4 +208,31 @@ function sumAll(arraying){
     .reduce((acc, curr) => acc + curr);
 }
 
+
+// Camelize using .filet .map return as Join
+
+const rumbleSample = "Lo-----st-st----y----le----im-----age-----------";
+
+function camelNa(str){
+    return str
+    .split("-")
+    .map((relevant, index) => index == 0 ? relevant : relevant.toUpperCase() + relevant.slice(1))
+    .join("");
+}
+console.log(camelNa(rumbleSample));
+
+const ranger = [1, 2, 3, 4, 5];
+
+function ranging(ranger, a, b){
+    return ranger.filter(item => (a <= item && item <= b))
+}
+
+let filtered = ranging(ranger, 1, 3);
+
+console.log(filtered);
+console.log(ranger);
+
+
 // Will Continue on Test-driven development (TDD)
+
+

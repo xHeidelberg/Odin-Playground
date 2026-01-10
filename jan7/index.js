@@ -209,30 +209,52 @@ function sumAll(arraying){
 }
 
 
-// Camelize using .filet .map return as Join
+// Camelize using .split .map return as Join
 
-const rumbleSample = "Lo-----st-st----y----le----im-----age-----------";
+const sample1 = "background-color"; // backgroundColor
+const sample2 = "list-style-image"; // listStyleImage
+const sample3 = "-webkit-transition"; // WebkitTransition
+//const combineSample = ["background-color", "list-style-image", "-webkit-transition"];
 
-function camelNa(str){
+function camelize(str){
     return str
-    .split("-")
-    .map((relevant, index) => index == 0 ? relevant : relevant.toUpperCase() + relevant.slice(1))
+    .split('-')
+    .map(
+        (word, index) => index == word[0] ? word : word.charAt(0).toUpperCase() + word.slice(1)
+    )
     .join("");
 }
-console.log(camelNa(rumbleSample));
 
-const ranger = [1, 2, 3, 4, 5];
+console.log(camelize(sample3));
 
-function ranging(ranger, a, b){
-    return ranger.filter(item => (a <= item && item <= b))
+
+function filterRange(arr, a, b){
+    return arr.filter(insideItems => (a <= insideItems && insideItems <= b));
 }
 
-let filtered = ranging(ranger, 1, 3);
+// Filter range "in place"
+let arruy = [5, 3, 8, 1];
+let filtered = filterRange(arr, 1, 3);
 
 console.log(filtered);
-console.log(ranger);
+console.log(arruy);
 
+// Sort in decreasing order
+let decreaseMe = arruy.sort((a, b) => b - a); // a - b sort increase
+console.log(decreaseMe)
 
-// Will Continue on Test-driven development (TDD)
+//  Copy and sort array
+
+let copyArr = ["HTML", "CSS", "JavaScript"];
+
+function copySorted(arr){
+    return arr.slice().sort();
+}
+
+let sorted = copySorted(arr);
+console.log(sorted);
+console.log(copyArr);
+
+// Loops and Array Continue
 
 

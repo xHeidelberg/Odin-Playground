@@ -125,7 +125,7 @@ arrayMethodSample.splice(0, 2, "Two.1", "Two.2"); //splice remove
 arrayMethodSample.splice(2, 0, "Two.3", "Two.4");//splice add
 console.log(arrayMethodSample);
 
-// Array methods and empty slots
+/* Array methods and empty slots
 const colorsNow = ["red", "yellow", "blue"];
 colorsNow[6] = "Pink";
 
@@ -135,7 +135,7 @@ colorsNow.forEach((inside, indexing) => {
 
 console.log(colorsNow.reverse());
 
-
+*/
 //Array Magic
 let checkEven = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -256,5 +256,23 @@ console.log(sorted);
 console.log(copyArr);
 
 // Loops and Array Continue
+console.clear();
+let rangeee = function(str, num){
+    let jointing = "";
+    if (num > 0){
+        for (let i = 0; i < num; i++){
+            jointing += str;
+        }
+        return jointing;
+    }
+    else{
+        return "ERROR";
+    }
+}
+
+
+// Sample 
+
+
 
 

@@ -10,3 +10,4 @@ October 14, 2025 - Simple Manual Calculator <br>
 October 15, 2025 - Alert, Methods, Click Counter, Function basic<br>
 January 6, 2026 - Resuming Odin Project<br>
 January 7, 2026 - Resuming 4 Paths <br>
+January 12, 2026 - Unable to Edit due to School Requirements<br>

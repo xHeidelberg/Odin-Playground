@@ -272,7 +272,38 @@ let rangeee = function(str, num){
 
 
 // Sample 
+const checkArrRem = function(arr, ...value){
+    for(let i = arr.length - 1; i >= 0; i--){
+        if (value.includes(arr[i])){
+            arr.splice(i, 1);
+        }
+    }
+    return arr;
+}
+
+console.log(checkArrRem([1, 2, 3, 4], 3, 2));
 
 
+// SumAll (Start, End)
+const sumAll = function(start, end) {
+let sum = 0;
+if (start > 0 && end > 0 && Number.isInteger(start) && Number.isInteger(end)) {
+  if(start < end){
+    for(let i = start; i <= end; i++){
+        sum += i;
+    }
+    return sum;
+  }
+  else if (start > end){
+    for (let i = end; i <= start; i++){
+        sum += i;
+    }
+    return sum;
+  }
+}
+else{
+    return 'ERROR';
+  }
+};
 
-
+console.log(sumAll(1, 400));

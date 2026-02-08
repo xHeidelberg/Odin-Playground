@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <title>Document</title>
+</head>
+<style>
+    #demoCLICK {
+        color: red;
+        font-weight: bolder;
+
+    }
+</style>
+
+<body>
+    <div id="container">
+        <p id="imHidden" style="visibility: hidden;">HELLO WORLD!</p>
+        <button id="clicker">Click me to Visible</button>
+        <div id="divOne">Sample 1</div>
+        <div id="divTwo">Sample 2</div>
+    </div>
+    <!-- Update -->
+    <div id="clickDOM" style="text-align: center;">
+        <p id="afterClick">HELLO, WORLD!!</p>
+        <button onclick="clickMeDOM()">Change Color DOM</button>
+    </div>
+    <!-- Add/Create and Remove-->
+    <div id="innerHTMLsample">
+        <p id="innerToRemove">There's noting here</p>
+        <button id="clickerForInner" style="cursor: pointer; padding: 10px;">Click me to add innerHTML</button>
+    </div>
+
+    <div class="exercise">
+        <p id="exe-para"></p>
+        <h3 id="exe-h3"></h3>
+        <div id="exe-div">
+            <h1></h1>
+            <p></p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

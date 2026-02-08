@@ -44,7 +44,7 @@ document.getElementById('clickerForInner').onclick = function addAndRemove() {
     const innerBase = document.getElementById('innerHTMLsample');
     //document.getElementById('innerToRemove').innerHTML = "";
     const removeNow = document.getElementById('innerToRemove');
-    if (removeNow){ // if true remove else no action 
+    if (removeNow) { // if true remove else no action 
         innerBase.removeChild(removeNow);
     }
 
@@ -57,3 +57,34 @@ document.getElementById('clickerForInner').onclick = function addAndRemove() {
 }
 
 // Exercise for DOM
+const main = document.querySelector('#exercise');
+
+const redParagraph = document.createElement('p');
+redParagraph.style.color = 'red';
+redParagraph.textContent = "Hey I\’m red!";
+main.appendChild(redParagraph);
+
+const blueHeader = document.createElement('h3');
+blueHeader.style.color = 'blue';
+blueHeader.textContent = "I\'m a blue h3!";
+main.appendChild(blueHeader);
+
+const divisionInside = document.createElement('div');
+divisionInside.style.cssText = "border: 2px solid black; background-color: pink;"
+main.appendChild(divisionInside);
+
+const divH1 = document.createElement('h1');
+divH1.textContent = "I\'m in a div";
+divisionInside.appendChild(divH1);
+
+const divPara = document.createElement('p');
+divPara.textContent = "ME TOO!";
+divisionInside.appendChild(divPara);
+
+main.appendChild(divisionInside);
+
+// Event DOM
+
+const eventBtn = document.querySelector('#btnAlert');
+
+eventBtn.onclick = () => alert("Sample Alert");

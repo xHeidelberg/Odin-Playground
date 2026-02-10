@@ -86,5 +86,36 @@ main.appendChild(divisionInside);
 // Event DOM
 
 const eventBtn = document.querySelector('#btnAlert');
-
 eventBtn.onclick = () => alert("Sample Alert");
+
+const btnMethod3 = document.querySelector('#btnAlertMethod3');
+
+btnMethod3.addEventListener("click", function (e) {
+    e.target.style.cssText = "padding: 10px 15px; color: blue;";
+})
+
+// ==================
+const mySampleArrrrr = ['A', 'AB', 'ABC', 'ABCD'];
+console.log(mySampleArrrrr.map((Passed) => Passed.valueOf(Passed)));
+
+
+
+const allInOne = document.querySelectorAll('#containerRizzz button');
+
+allInOne.forEach(
+    (button) => {
+        button.addEventListener('click', () => {
+            console.log(button.value);
+        })
+    }
+);
+
+
+// another btn
+const anthrBtn = document.querySelector('#anotherBtn');
+
+anthrBtn.addEventListener('click', () => {
+    console.log(type);
+});
+
+// Mouse Event

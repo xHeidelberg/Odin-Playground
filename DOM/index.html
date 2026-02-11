@@ -47,6 +47,42 @@
     </div>
 
     <button id="anotherBtn">ANOTHER BUTTON</button>
+    <!-- Click Detect-->
+    <div id="mouseEventSample" style="text-align: center;">
+        <a id="msEventWhat"> Message Should be Here....</a> <br>
+        <button id="msEvent">Click for Detect</button>
+    </div>
+    <!-- Key + Click Event-->
+    <div id="keyWithBtn" style="text-align: center; border-top: 1px solid black;">
+        <h1>Key + Click Event</h1>
+        <a id="clickMsg">Key: Not Deteceted.....</a><br>
+        <button id="clickKey">Click me + Key</button>
+    </div>
+    <!-- X and Y Tacking on Mouse-->
+    <div id="trackArea" style="height: 200px; width: 400px; border: 1px black; background-color: green;"></div>
+    <p id="log">
+        Screen X/Y: <br>
+        Client X/Y:</p>
+
+    <!-- Event Delegation-->
+    <div style="display: flex; justify-content: center; background-color: yellow;">
+        <ul id="menu" style="display: flex; justify-content: space-evenly; text-decoration: none; list-style: none; ">
+            <li><a id="home">Home</a></li>
+            <li><a id="dashboard">Dashboard</a></li>
+            <li><a id="report">Report</a></li>
+        </ul>
+        <style>
+            #menu li{
+                padding: 10px 15px;
+            }
+            #menu li a{
+                cursor: pointer;
+            }
+        </style>
+    </div>
+
+
+    
 </body>
 
 </html>

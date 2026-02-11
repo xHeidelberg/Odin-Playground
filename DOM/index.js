@@ -119,3 +119,82 @@ anthrBtn.addEventListener('click', () => {
 });
 
 // Mouse Event
+
+const whereEventIs = document.querySelector('#mouseEventSample');
+
+whereEventIs.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+});
+
+
+whereEventIs.addEventListener('mouseup', (e) => {
+    let msg = document.querySelector('#msEventWhat');
+
+    switch (e.button) {
+        case 0:
+            msg.textContent = "Left button clicked.";
+            msg.style.cssText = "color: red; font-weight: bolder; font-size: 20px;";
+            break;
+        case 1:
+            msg.textContent = "Middle button clicked";
+            msg.style.cssText = "color: red; font-weight: bolder; font-size: 20px;";
+            break;
+        case 2:
+            msg.textContent = "Right button clicked.";
+            msg.style.cssText = "color: red; font-weight: bolder; font-size: 20px;";
+            break;
+        default:
+            msg.textContent = `Unknown mouse button code: ${e.button}`;
+            msg.style.cssText = "color: red; font-weight: bolder; font-size: 20px;";
+
+    }
+});
+
+
+// Mouse + Key Event
+
+const keyBtn = document.querySelector('#clickKey');
+
+keyBtn.addEventListener('click', (e) => {
+    let whatKey = [];
+
+    if (e.shiftKey) whatKey.push('shift');
+    if (e.ctrlKey) whatKey.push('ctrl');
+    if (e.altKey) whatKey.push('alt');
+    if (e.metaKey) whatKey.push('meta');
+
+    let keyMouseMsg = document.querySelector('#clickMsg');
+    keyMouseMsg.textContent = `Key: ${whatKey.join('+')}`;
+});
+
+// X and Y Tracking of Mouse
+
+const trackingArea = document.querySelector('#trackArea');
+
+trackingArea.addEventListener('mousemove', (e) => {
+    const whereLog = document.querySelector('#log');
+
+    whereLog.innerText = `Screen X/Y: (${e.screenX}, ${e.screenY})
+    Client X/Y: (${e.clientX}, ${e.clientY})`;
+});
+
+
+// Event Delegation
+
+const menuOptions = document.querySelector('#menu');
+
+menuOptions.addEventListener('click', (e) => {
+    const targeted = e.target;
+
+    switch (targeted.id) {
+        case 'home':
+            console.log('home');
+            break;
+        case 'dashboard':
+            console.log('dashboard');
+            break;
+        case 'report':
+            console.log('report');
+            break;
+    }
+});
